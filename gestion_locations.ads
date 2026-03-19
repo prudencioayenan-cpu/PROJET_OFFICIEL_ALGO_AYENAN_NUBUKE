@@ -1,5 +1,5 @@
-WITH Gestion_Date, Gestion_Identite, Gestion_Materiel, Gestion_Personnel, Gestion_Demandes;
-USE Gestion_Date, Gestion_Identite, Gestion_Materiel, Gestion_Personnel, Gestion_Demandes;
+WITH Gestion_Date, Gestion_Identite, Gestion_Materiel, Gestion_Personnel, Gestion_Demandes, Gestion_Clients;
+USE Gestion_Date, Gestion_Identite, Gestion_Materiel, Gestion_Personnel, Gestion_Demandes, Gestion_Clients;
 
 PACKAGE Gestion_Locations IS
    TYPE T_Location IS RECORD

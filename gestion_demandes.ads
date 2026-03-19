@@ -1,5 +1,5 @@
-WITH Gestion_Date, Gestion_Identite, Gestion_Materiel, Gestion_Personnel;
-USE Gestion_Date, Gestion_Identite, Gestion_Materiel, Gestion_Personnel;
+WITH Gestion_Date, Gestion_Identite, Gestion_Materiel, Gestion_Personnel, Gestion_Clients;
+USE Gestion_Date, Gestion_Identite, Gestion_Materiel, Gestion_Personnel, Gestion_Clients;
 
 PACKAGE Gestion_Demandes IS
    TYPE T_Demande IS RECORD

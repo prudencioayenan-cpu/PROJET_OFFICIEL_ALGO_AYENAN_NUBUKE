@@ -1,5 +1,5 @@
-WITH Gestion_Date;
-Use Gestion_Date;
+WITH Ada.Text_IO, Gestion_Date;
+USE Ada.Text_IO, Gestion_Date;
 
 PACKAGE Gestion_Materiel IS
    TYPE T_Categorie IS (CAMERAS, SONO, PRISE_DE_SON, PROJECTION, LUMIERES);
@@ -22,8 +22,8 @@ PACKAGE Gestion_Materiel IS
    PROCEDURE Ajout_Materiel (Tete_Mat : IN OUT T_Ptmat; Mat : IN T_Materiel);
    PROCEDURE Visu_Mat (Mat : IN T_Materiel);
    PROCEDURE Visu_All_Pack (Tete_Mat :  IN T_Ptmat);
-   PROCEDURE Supprimer_pack (Tete_Mat : IN OUT T_Ptmat; Numpack : in integer; Catpack : in T_Categorie; OK : out boolean);
-   PROCEDURE Supprimer_pack_date_donnee(Tete_mat : in out T_Ptmat; D : in T_Date; Numpack : in integer; Catpack : in T_Categorie; OK : out boolean);
+   PROCEDURE Supprimer_pack (Tete_Mat : IN OUT T_Ptmat; Numpack : in integer; Catpack : in T_Categorie);
+   PROCEDURE Supprimer_pack_date_donnee(Tete_mat : in out T_Ptmat; D : in T_Date; Numpack : in integer; Catpack : in T_Categorie);
    PROCEDURE Visu_pack_dispo (Tete_mat : in T_Ptmat);
-
+   PROCEDURE Charger_Materiel (Tete_Mat : IN OUT T_PtMat);
 END Gestion_Materiel;

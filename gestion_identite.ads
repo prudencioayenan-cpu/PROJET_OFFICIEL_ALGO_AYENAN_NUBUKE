@@ -2,7 +2,7 @@ WITH Ada.Text_IO, Ada.Integer_Text_IO;
 USE Ada.Text_IO, Ada.Integer_Text_IO;
 
 PACKAGE Gestion_Identite IS
-   SUBTYPE T_Mot IS String (0..20);
+   SUBTYPE T_Mot IS String (1..20);
    Type T_Identite is record
       Nom , Prenom : T_Mot :=(others =>' ');
       KNom, Kprenom : integer:=0;
